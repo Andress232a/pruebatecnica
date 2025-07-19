@@ -2,18 +2,21 @@
 
 Este proyecto es un mini-backend usando Node.js, Express y MongoDB, siguiendo el modelo de 3 capas y arquitectura multitenant. Permite gestionar pedidos y productos para múltiples empresas (tenants), como se muestra en la vista de referencia.
 
+## Repositorio
+[https://github.com/Andress232a/pruebatecnica](https://github.com/Andress232a/pruebatecnica)
+
 ## Tecnologías usadas
 - Node.js
 - Express
 - MongoDB + Mongoose
 
 ## Estructura del proyecto
-- `src/` Código fuente
-  - `models/` Modelos de datos (Mongoose)
-  - `controllers/` Controladores (capa de presentación)
-  - `services/` Lógica de negocio
-  - `routes/` Definición de rutas
-  - `middlewares/` (para lógica adicional, si se requiere)
+- `src/` Código fuente  
+  - `models/` Modelos de datos (Mongoose)  
+  - `controllers/` Controladores (capa de presentación)  
+  - `services/` Lógica de negocio  
+  - `routes/` Definición de rutas  
+  - `middlewares/` (para lógica adicional, si se requiere)  
   - `app.js` Configuración principal de Express
 - `config/` Configuración de base de datos
 - `.gitignore` Archivos y carpetas ignorados
@@ -21,22 +24,22 @@ Este proyecto es un mini-backend usando Node.js, Express y MongoDB, siguiendo el
 
 ## Instalación y ejecución
 
-1. **Clona el repositorio:**
+1. **Clona el repositorio:**  
    ```bash
-   git clone <URL_DEL_REPOSITORIO>
+   git clone https://github.com/Andress232a/pruebatecnica.git
    cd pruebatecnica
    ```
-2. **Instala las dependencias:**
+2. **Instala las dependencias:**  
    ```bash
    npm install
    ```
-3. **Configura el archivo `.env`:**
+3. **Configura el archivo `.env`:**  
    Crea un archivo `.env` en la raíz con el siguiente contenido:
    ```env
    MONGODB_URI=mongodb://localhost:27017/pruebatecnica
    PORT=3000
    ```
-4. **Inicia el servidor:**
+4. **Inicia el servidor:**  
    ```bash
    npm run dev
    ```
@@ -99,8 +102,6 @@ Este proyecto es un mini-backend usando Node.js, Express y MongoDB, siguiendo el
   }
   ```
   Luego usa el campo `_id` generado como `tenantId` en los demás endpoints.
-
-
 
 ## Autor
 Andres suarez soto
